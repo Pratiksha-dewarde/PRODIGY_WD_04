@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 1);
+}
+.logo h1{
+    font-size: 24px;
+    font-weight: 700;
+    cursor: pointer;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav li{
+    margin-right: 20px;
+}
+nav a{
+    display: block;
+    padding: 10px;
+    color: #333;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+nav a:hover{
+    color: gray;
+}
+.hire-me a{
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 25px;
+    padding: 10px 20px;
+    border: 2px solid black;
+    font-size: 1rem;
+    background-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+.hire-me a:hover{
+    color: white;
+    background-color:black;
+}
+.hero{
+    color: white;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+   background: url(https://wallpaperaccess.com/full/279547.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.container{
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.hero-content{
+    max-width: 62%;
+    padding: 0 30px;
+    position: relative;
+}
+.hero-content .animated-title{
+    font-size: 4rem;
+    font-weight: 700;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    position: relative;
+    animation: slide-up 0.6s cubic-bezier(0.65,0.05,0.36,1.0) 0.05 forwards;
+}
+
+.animated-text{
+    font-size: 1.5rem;
+    font-weight: 400;
+    opacity: 0;
+    margin-bottom: 20px;
+    transform: translate(50px);
+    animation:slide-up 0.4s cubic-bezier(0.65,0.05,0,36,1.0) 1s forwards ;
+}
+
